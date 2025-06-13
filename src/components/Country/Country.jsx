@@ -13,7 +13,7 @@ const Country = ({ country, handleVisitedCountries }) => {
     handleVisitedCountries(country);
   };
 
-  console.log(country.flags);
+  // console.log(country.flags);
   return (
     <div className={`country  ${visited && 'country-visited'}`}>
       {/* when one class is fixed and another is for conditional rendaring */}
