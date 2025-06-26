@@ -8,9 +8,12 @@ const Country = ({ country, handleVisitedCountries, handleVisitedFlags }) => {
   //console.log(handleVisitedCountries);
 
   const handleVisited = () => {
-    setVisited(!visited);
+    const newVisited = !visited;
+    setVisited(newVisited);
 
-    handleVisitedCountries(country);
+    if (newVisited) {
+      handleVisitedCountries(country);
+    }
   };
 
   // console.log(country.flags);

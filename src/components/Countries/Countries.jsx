@@ -6,6 +6,7 @@ const Countries = ({ countriesPromise }) => {
   const countries = use(countriesPromise);
 
   const [visitedCountries, setVisitedCountries] = useState([]);
+
   const [visitedFlags, setVisitedFlags] = useState([]);
 
   const handleVisitedCountries = country => {
@@ -21,7 +22,7 @@ const Countries = ({ countriesPromise }) => {
 
   return (
     <div>
-      <h2>Travelling Countries: {countries.length}</h2>
+      <h2>My Travelling Countries: {countries.length}</h2>
       <h3>Travelled so far: {visitedCountries.length}</h3>
 
       <ol>
